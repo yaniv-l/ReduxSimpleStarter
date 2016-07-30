@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { Component } from 'react'
 import { connect } from 'react-redux';
 
 
@@ -14,7 +15,7 @@ class BookList extends Component{
   render(){
     return(
       <ul className="list-group col-sm-4">
-        {this.renderList}
+        {this.renderList()}
       </ul>
     );
   }
