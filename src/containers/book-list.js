@@ -11,6 +11,7 @@ class BookList extends Component{
       return(
         <li
           key={book.title}
+          // <!--onClick will invoke redux action creator which is exposed under this.props since we mapDispatchToProps -->
           onClick={()=> this.props.selectBook(book)}
           className="list-group-item">{book.title}</li>
       );
